@@ -14,7 +14,7 @@ CHROMA_PATH = "./database"
 DATA_PATH = "./sources"
 PLATFORM = "ollama"
 MODEL_TYPE = "gemma"
-# MODEL_NAME = "llama3.2:3b"
+MODEL_NAME = "gemma2:27b-instruct-q4_0"
 
 
 def main():
@@ -43,7 +43,7 @@ def split_documents(documents):
         buffer_size=1
     )
 
-    return splitter.split_documents(documents)
+    return splitter.split_documents(documents[:])
 
 def add_to_chroma(chunks: list[Document]):
     db = Chroma(

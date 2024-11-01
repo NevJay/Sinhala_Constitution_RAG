@@ -14,5 +14,9 @@
 
 **Query the RAG application:**
 
-```python query_rag.py <INSERT QUESTION WITHIN DOUBLE QUOTES>```
+<!-- ```python query_rag.py <INSERT QUESTION WITHIN DOUBLE QUOTES>``` -->
+
+```python app/app.py```
+
+Once you run the above command, a live server url for the RAG interface will be provided
 

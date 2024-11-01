@@ -10,7 +10,7 @@ def get_embedding_function(platform, model_type):
             model_name = "llama3.2:3b"
         
         embeddings = OllamaEmbeddings(
-            model = model_name,
+            model = "gemma2:2b",
             # num_gpu=-1,
             # num_thread=6,
             show_progress=False

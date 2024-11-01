@@ -1,4 +1,5 @@
 import gradio as gr
+from query_data import main
   
 with gr.Blocks() as demo:
     gr.Markdown("""
@@ -12,10 +13,12 @@ with gr.Blocks() as demo:
     with gr.Row():
         # with gr.Column():
         question = gr.Textbox(label="Question")
-            
+        
         # with gr.Column():
         answer = gr.Textbox(label="Answer")
     
     summarize_btn = gr.Button(value="Generate", size = 'sm')
+
+    summarize_btn.click(fn=main, inputs=question, outputs=answer)
 
 demo.launch(inbrowser=True)
