@@ -2,7 +2,7 @@
 
 *Place your sources in the "app/sources" folder*
 
-**Move into "app" folder**
+**Run every command from inside the "app" folder**
 
 **Populating the database:**
 
@@ -16,7 +16,7 @@
 
 <!-- ```python query_rag.py <INSERT QUESTION WITHIN DOUBLE QUOTES>``` -->
 
-```python app/app.py```
+```python app.py```
 
 Once you run the above command, a live server url for the RAG interface will be provided
 
