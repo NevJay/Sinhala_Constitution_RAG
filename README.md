@@ -1,6 +1,6 @@
 ***DEMO***
 
-*Place your sources in the "app/sources" folder*
+**Place your sources in the "app/sources" folder**
 
 **Run every command from inside the "app" folder**
 
